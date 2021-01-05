@@ -1,40 +1,153 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data->
+            <img src="assets/logo.png" alt="logo" >
+            <h1>React</h1>
+        </section>
+        <section>
+            <h1>What is React?</h1>
+            <ul>
+                <li>A open-source component-based approach JavaScript library for building user interfaces</li>
+                <li>Forces you to think in terms of components.</li>
+                <li>Created by Facebook in 2013</li>
+            </ul>
+        </section>
+        <section>
+            <section>
+                <h1>Why do Developers use React?</h1>
+            </section>
+            <section>
+                <ul>
+                    <li>Easy to learn and use</li>
+                    <li>Less code -> more functionality</li>
+                    <li>Reusable components</li>
+                    <li>Performance Enhancement by Virtual DOM</li>
+                    <li>Flexible</li>
+                    <li>Easy to test</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section><h1>Fundamental things of React</h1></section>
+        </section>
+        <section>
+            <section><h1>Virtual DOM</h1></section>
+            <section>
+                <span>What is Virtual DOM?</span>
+                <img src="assets/virtualDOM.jpg">
+            </section>
+            <section>What problems lead to creating a Virtual DOM</section>
+            <section>
+                <h1>How it works?</h1>
+            </section>
+            <section>
+                <img src="assets/workVD.jpg"/>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h1>JSX</h1>
+            </section>
+            <section>
+                <h2>This is a special and valid syntax extension for React (JavaScript XML)</h2>
+            </section>
+            <section>
+                <p>By using JSX we can write the following JSX code</p>
+                <img src="assets/example-1.png"/>
+            </section>
+            <section>
+                <p>And Babel will transform it into this</p>
+                <img src="assets/example-2.png"/>
+            </section>
+            <section>
+                <p>JSX just syntactic sugar for the React.createElement(component, props, ...children) function</p>
+                <p>You can think of JSX as a shorthand for calling React.createElement()</p>
+            </section>
+            <section>
+                <img src="assets/example-3.png"/>
+            </section>
+            <section>
+                <img src="assets/example-4.png"/>
+            </section>
+            <section>
+                <img src="assets/example-5.png"/>
+            </section>
+            <section>
+                <img src="assets/example-6.png" />
+            </section>
+            <section>
+                <p>This is a powerful tool that allows us not to think about many things and greatly speeds up application development. It makes it easier to write the logic for how the component will be displayed.</p>
+            </section>
+        </section>
+        <section>
+            <section><h1>Components</h1></section>
+            <section>
+                <p>Component-based</p>
+                <img src="assets/example-9.png"/>
+            </section>
+            <section>
+                <p>Components are the building blocks of any React app</p>
+                <img src="assets/example-7.png"/>
+                <img src="assets/example-8.png"/>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h1>State and props</h1>
+            </section>
+            <section>
+                <p>Props is short for properties and they are used to pass data between React components. React’s data flow between components is uni-directional (from parent to child only).</p>
+            </section>
+            <section>
+                <img src="assets/example-10.png" />
+            </section>
+            <section>
+                <h1>State</h1>
+            </section>
+            <section>
+                <p>Class component (stateful component) with state</p>
+                <img src="assets/example-11.png"/>
+            </section>
+            <section>
+                <p>Functional component (stateless component)</p>
+                <img src="assets/example-12.png"/>
+            </section>
+            <section>
+                <p>State is similar to props but unlike props, it is private to a component and is controlled solely by the said component.</p>
+            </section>
+        </section>
+        <section>
+            <p>That's all</p>
+            <p>Thanks for attention</p>
+        </section>
+    </div>
+</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    });
+</script>
+</body>
 </html>
